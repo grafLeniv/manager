@@ -1,0 +1,221 @@
+li  {
+  list-style: none
+}
+
+body{
+ background-image: url("https://img2.goodfon.ru/original/1920x1080/7/11/tekstura-goluboy-fon-kletki.jpg");
+     background-size: cover;
+}
+a,h2{
+  color: #fff;
+  text-decoration: none;
+ }
+h1{
+  color:#2ca8c6
+}
+.container{
+  width:500px;
+  background-color: rgba(24, 33, 52, 0.7);
+  margin: 200px auto 0 auto;
+  text-align: center;
+  box-shadow: 0 -5px 0 #3adbfd;
+  padding-bottom: 40px;
+  padding-top: 20px;
+} 
+
+
+input[type="username"],input[type="password"]{
+  width: 300px;
+  height:50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding-left: 40px;
+}
+
+.dws-input input:hover{
+  box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+.dws-submit {
+  padding: 13px 30px;
+  margin: 5px 10px 20px 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #2ca8c6;
+  border: none;
+  border-bottom: 4px solid #6ee9fd;
+  cursor: pointer;
+}
+.dws-submit:hover{
+  transition: all 0.5s;
+  background: #fff;
+  color: #2c536c;
+}
+
+.dws-input::before{
+  font-family: "FontAwesome";
+  content: "\f007";
+  position: absolute;
+  font-size: 30px;
+  padding: 20px 0 0 7px;
+  color: #2c536c;
+  opacity: 0;
+}
+.dws-input:nth-child(2)::before{
+  content: "\f023";
+}
+.dws-input:hover::before{
+  color: #319ebc;
+  transition: all 0.3s;
+}
+.dws-social i{
+  color: #fff;
+  font-size: 20px;
+  width: 20px;
+  padding: 10px;
+}
+.dws-social i:hover{
+  background-color: #fff;
+  color: #1a394f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styl-log{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 57px;
+  color:#6ee9fd ;
+  line-height: 2.2;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+
+a.out {
+  font-size: 22px;
+  font-family: Garamond, serif;
+  width: 80px;
+  padding: 10px;
+}
+
+.out {
+  font-size: 22px;
+  font-family: Garamond, serif;
+  width: 80px;
+  margin: 0 0 0 auto;
+  padding: 10px;
+}
+
+
+
+.quiz {
+  margin-left:-150px;
+  width: 500px;
+  floaf:left;
+}
+.quiz-indicator,
+.quiz-results,
+.quiz-questions {
+  margin-bottom: 5px;
+  font-family: Verdana, sans-serif;
+  color:white;
+}
+
+.quiz-questions-item, 
+.quiz-results-item {
+  &__questions {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__answers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.quiz-indicator {}
+
+.quiz-results {
+  display: none;
+}
+
+.btn-restart {
+  display: none;
+}
+
+
+.question--hidden,
+.indicator--hidden,
+.btn-next--hidden {
+  display: none;
+}
+
+.indicator--visible,
+.btn-restart--visible {
+  display: block;
+}
+
+.answer--invalid {
+  color:red;
+}
+
+.answer--valid {
+  color: green;
+}
+
+button.btn-next {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background-color: #2ca8c6; /* фон кнопки */
+  padding: 13px 30px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  font-size: 16px;
+  border: none;
+  border-bottom: 4px solid #6ee9fd;
+  cursor: pointer;
+  margin: 5px 10px 20px 10px;
+
+}
+
+
+button.btn-next:hover { 
+  transition: all 0.5s;
+  background: #fff;
+  color: #2c536c; 
+  } /* при наведении курсора мышки */
+
+
+button.btn-next:active { 
+  background: gray; 
+  } /* при нажатии */
+
+button.btn-restart {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background-color: #2ca8c6; /* фон кнопки */
+  padding: 13px 30px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  font-size: 16px;
+  border: none;
+  border-bottom: 4px solid #6ee9fd;
+  cursor: pointer;
+  margin-left:200px;
+}
+
+button.btn-restart:hover { 
+  transition: all 0.5s;
+  background: #fff;
+  color: #2c536c; 
+  } /* при наведении курсора мышки */
+
+
+button.btn-restart:active { 
+  background: gray; 
+  } /* при нажатии */
+ 

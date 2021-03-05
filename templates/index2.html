@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+   
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ax.css') }}">
+		<script src="{{ url_for('static', filename='jquery.js') }}"></script>
+		
+	</head>
+	<div class="out">
+		<a href="/logout">Выйти</a> <br> <br>
+	</div>
+	<div class="container">
+		<section><h1>Контрольные вопросы</h1>
+			<h2>Тема</h2>
+		</section>
+		<a href="test" class="dws-submit" type="submit">Пройти тест</a>
+	</div>
+	<div class="container">
+		<section><h1>Task manager</h1>
+		</section>
+		<a href="/taskman" class="dws-submit" type="submit">next</a>
+	</div>
+	<footer>
+
+	</footer>
+	
+
+{% else %}
+<div class="container">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ax.css') }}">
+  	<span class="styl-log">
+		Тест
+	</span>
+	<a class="dws-submit" href="/login">Авторизация</a> 
+	<a class="dws-submit" href="/register">Регистрация</a>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+<p>Уже авторизован!</p>
+{% else %}
+
+<div class="container">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ax.css') }}">
+  <span class="styl-log">
+  Авторизация
+  </span>
+  <form action="/login" method="POST">
+    <div class="dws-input">
+      <input type="username" name="username" placeholder="Имя">
+    </div>
+    <div class="dws-input">
+      <input type="password" name="password" placeholder="Пароль">
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input class="dws-submit" type="submit" value="Вход">
+    </a>
+  </form>
+</div>
+{% endif %}
+{% endblock %}
